@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { deleteTask } from '../redux/contacts/slice';
 
 const ContactsList = () => {
-  const contacts = useSelector(state => state.contacts);
+  const contacts = useSelector(state => state.contacts.contactsState);
 
   const filteredbyName = useSelector(state => state.filter.filter);
   const dispatch = useDispatch();
